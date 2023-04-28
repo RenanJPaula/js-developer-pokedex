@@ -1,0 +1,439 @@
+#content-second{
+    box-sizing: border-box;
+    width: 80%;
+    height: 800px;
+    border: solid 2px;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-image: url(../img/imgf.jpg), url(../img/imgf.jpg);
+    background-size: 50%;
+    background-position: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+#img {
+    border-radius: 10%;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    opacity: 95%;
+}
+
+#size {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 40rem;
+    height: 20rem;
+}
+
+.pokemons { 
+    padding: 0;
+    margin: 0;
+}
+
+.normal {
+    background-color: #a6a877f1;
+}
+
+.grass {
+    background-color: #76c850f1;
+}
+
+.fire {
+    background-color: #ee7f30f1;
+}
+
+.water {
+    background-color: #678feef1;
+}
+
+.electric {
+    background-color: #f7cf2ef1;
+}
+
+.ice {
+    background-color: #98d5d7f1;
+}
+
+.ground {
+    background-color: #dfdf69ee;
+}
+
+.flying {
+    background-color: #a98ff0ea;
+}
+
+.poison {
+    background-color: #a040a0ef;
+}
+
+.fighting {
+    background-color: #bf3129ee;
+}
+
+.psychic {
+    background-color: #f65686f3;
+}
+
+.dark {
+    background-color: #725847ef;
+}
+
+.rock {
+    background-color: #b8a037ee;
+}
+
+.bug {
+    background-color: #a8b720ee;
+}
+
+.ghost {
+    background-color: #6e5896ec;
+}
+
+.steel {
+    background-color: #b9b6cff1;
+}
+
+.dragon {
+    background-color: #6e38f6f1;
+}
+
+.fairy {
+    background-color: #f9aec7ec;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .9;
+    text-align: center;
+    font-size: .825rem;
+}
+
+.pokemon .name {
+    color: #000;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    float: right;
+    margin-left: 0.182rem;
+    text-transform: capitalize;
+}
+
+#botao-status {
+    margin-left: 2rem;
+    width: 3.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2rem;
+    width: 20%;
+    align-items: center;
+}
+
+.status .divstatus {
+    width: 10rem;
+    text-transform: capitalize;
+}
+
+.status .widthstats {
+    width: 1.3rem;
+}
+
+.sizestatus {
+    width: 1rem;
+}
+
+.status .divstatus .firststatus {
+    display: block;
+}
+
+.status .divstatus .secondstatus {
+    display: block;
+}
+
+.status .divstatus .thirdstatus {
+    display: block;
+}
+
+.status .divstatus .fourthstatus {
+    display: block;
+}
+
+.status .divstatus .fifthstatus {
+    display: block;
+}
+
+.status .divstatus .sixthstatus {
+    display: block;
+}
+
+#button-abilities {
+    margin: 1rem 0 0 11rem;
+    width: 4.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.abilitiesClass {
+    position: absolute;
+    margin-left: 16.7rem;
+    text-transform: capitalize;
+}
+
+.abilitiesId{
+    width: 50px;
+}
+
+#button-about {
+    margin-left: 9.5rem;
+    width: 4.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.aboutClass {
+    position: absolute;
+    margin-left: 31rem;
+}
+
+.aboutClass .firstabout {
+    display: block;
+}
+
+.aboutClass .secondabout {
+    display: block;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#backa {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#backa button {
+    background-color: #9191918e;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+}
+
+.button-class .rowclass {
+    display: inline;
+    position: relative;
+}
+
+@media screen and (min-width: 380px) {
+    .button-class .rowclass, #botao-status, #button-abilities, #button-about {
+        margin: 0;
+    }
+    
+    .button-class{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #grid #status-container {
+        position: absolute;
+        margin-top: -15rem;
+        margin-left: 1.9rem;
+    }
+
+    .button-class .rowclass #button-abilities{
+        margin-top: 9rem;
+        display: block;
+
+    }
+    #grid #abilitiesId {
+        position: absolute;
+        align-self: center;
+        margin-top: -6.5rem;
+        margin-left: 4.7rem;
+    }
+
+    .button-class #button-about {
+        margin-top: 4.2rem;
+    }
+    #grid #aboutId {
+        margin-top: 1rem;
+        margin-left: 4.6rem;
+    }
+
+    #size{
+        width: 17rem;
+        height: 27.4rem;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .button-class .rowclass, #botao-status, #button-abilities, #button-about {
+        margin: 0;
+    }
+    
+    .button-class{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #grid #status-container {
+        position: absolute;
+        margin-top: -15rem;
+        margin-left: 3rem;
+    }
+
+    .button-class .rowclass #button-abilities{
+        margin-top: 9rem;
+        display: block;
+
+    }
+    #grid #abilitiesId {
+        position: absolute;
+        align-self: center;
+        margin-top: -6.5rem;
+        margin-left: 6.2rem;
+    }
+
+    .button-class #button-about {
+        margin-top: 4.2rem;
+    }
+    #grid #aboutId {
+        margin-top: 1rem;
+        margin-left: 6rem;
+    }
+
+    #size{
+        width: 20rem;
+        height: 27.4rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .button-class {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #botao-status {
+        width: 60px;
+        margin-right: 10.6rem;
+        margin-left: 4rem;
+    }
+
+    #grid #status-container {
+        margin-top: -10rem;
+        margin-left: 1rem;
+    }
+
+    .button-class .rowclass #button-abilities{
+        margin-top: 0;
+    }
+    #grid #abilitiesId {
+        margin-top: -17.7rem;
+        margin-left: 16rem;
+    }
+
+    #button-abilities {
+        margin-left: -1.8rem;
+    }
+
+    .button-class #button-about {
+        margin: 10rem 0 0 6.7rem;
+    }
+    #grid #aboutId {
+        margin-top: 1.5rem;
+        margin-left: 9.5rem;
+    }
+
+    #size{
+        width: 27rem;
+        height: 27rem;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .button-class {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .button-class .rowclass {
+        margin: 1.4rem 0rem;
+    }
+
+    #grid #status-container {
+        margin-top:  0;
+        margin-left: 1rem;
+    }
+
+    #grid #abilitiesId {
+        margin-top: 2rem;
+        margin-left: 16.3rem;
+    }
+
+    .button-class #button-about {
+        margin-top: 0;
+        margin-left: -2.8rem;
+    }
+    #grid #aboutId {
+        margin-top: 0;
+        margin-left: 28.7rem;
+    }
+
+    #size{
+        width: 40rem;
+        height: 20rem;
+        max-width: 992px;
+    }
+    
+}
