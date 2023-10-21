@@ -2,15 +2,8 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151
-const limit = newSelect()
+const limit = 10
 let offset = 0;
-
-
-function newSelect(){
-    let select = document.querySelector('#selecao')
-    return select.value    
-}
-
 
 function convertPokemonToLi(pokemon) {
     return `
